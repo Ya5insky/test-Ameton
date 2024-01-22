@@ -1,0 +1,85 @@
+.support {
+    text-align: center;
+    padding-top: 40px;
+    &__main {
+        background: $blue;
+        border-radius: 40px;
+        padding: 59px 0 54px;
+        position: relative;
+        color: $white;
+        overflow: hidden;
+        z-index: 2;
+        .main__title {
+            font-weight: 700;
+            font-size: 60px;
+        }
+        .main__text {
+            font-weight: 500;
+            font-size: 17px;
+            width: 535px;
+            margin: 4px auto 0;
+        }
+        .main__links {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            &-item {
+                margin-right: 8px;
+                .item__button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 15px 0;
+                    background-color: $white;
+                    color: $grayBlack;
+                    height: 48px;
+                    min-width: 160px;
+                    border-radius: 12px;
+                    font-size: 15px;
+                    .button__img {
+                        height: 18px;
+                    }
+                    p {
+                        margin-left: 8px;
+                        font-weight: 700;
+                    }
+                }
+                .item__button:hover {
+                    color: $green;
+                    fill: $green;
+                }
+            }
+            :last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+    &__main::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 275px;
+        height: 196px;
+        left: 0;
+        top: 37px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('../../img/airplane.svg');
+        z-index: -1;
+    }
+    &__main::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 278px;
+        height: 226px;
+        right: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('../../img/phone.svg');
+        z-index: -1;
+    }
+}
